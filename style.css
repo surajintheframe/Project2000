@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: var(--color-primary-bg); */
+}
+body{
+  background-color: var(--color-primary-bg);
+
+}
+/*Color declaration starts here*/
+:root {
+  --color-primary-bg: #bfe1e6;
+  --color-primary-Black: #000000;
+  --color-primary-Blue: #0679dd;
+  --color-primary-red: rgb(193, 0, 0);
+}
+/*Color declaring ends here*/
+
+/*Decorations*/
+Header,
+ul,
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  color: var(--color-primary-Black);
+}
+a {
+  text-decoration: none;
+}
+.Logo {
+  font-size: 1.3em;
+  cursor: pointer;
+  font-weight: 200;
+}
+button {
+  padding: 10px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.Welcome_page ul li {
+  /* margin: -5px; */
+  font-size: 30px;
+  list-style: none;
+}
+
+.Welcome_page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  /* background-color: green; */
+  /* padding: 30px; */
+  margin: 0 10%;
+  font-size: 30px;
+}
+.Welcome_page .leftpage .words .left li {
+  color: var(--color-primary-red);
+}
+
+.s {
+  font-size: 30px;
+  color: var(--color-primary-red);
+}
+/*decorations padding etcetra etcetra*/
+
+
+/*justifying positions and locations*/
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.nav_bar ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+/*positions here*/
+
+/*/*****************All hover cases starts here**************/
+.text_pointer:hover {
+  cursor: pointer;
+}
+
+.rightpage:hover {
+  cursor: pointer;
+  touch-action: auto;
+}
+
+button:hover {
+  background-color: var(--color-primary-Blue);
+  color: var(--color-primary-Black);
+  /* border:1px solid red; */
+}
+.nav_bar ul li a:hover {
+  color: var(--color-primary-Blue);
+}
+/********************hover cases ends here*********************/
+
+/* .information_section .Slogan:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+} */
+
+.rightpage img {
+  width: 300px;
+  height: 300px;
+}
+.Welcome_page{
+  height: 90vh;
+}
+.Welcome_page .leftpage .ptag {
+  display: flex;
+  justify-content: end;
+  color: var(--color-primary-red);
+}
+.Welcome_page .leftpage .head {
+  letter-spacing: 8px;
+}
+.Welcome_page .leftpage .words {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Welcome_page  p{
+  
+  color: var(--color-primary-Black);
+
+}
+
+.nav_bar ul li a {
+  transition: all 0.3 ease 0s;
+}
+@keyframes animate{
+    from{
+        color: var(--color-primary-bg);
+        opacity: -50%;
+        transform: translateX(-120vh);
+    }
+    to{
+
+    }
+}
+/* 
+.left li , .ptag{
+    transition: transform 1s ease-in 2s;
+} */
+
+.left li , .ptag{
+    animation: animate 4s ease;
+
+}
+
+.text{
+  font-size: 19px;
+  margin: 4vh 12vh;
+}
+
+
+.ongoing_projects{
+  display: flex;
+  flex-direction: column;
+}
+.Footer{
+  height: 300px;
+  /* margin: 0vh 20vh; */
+  background-color: aliceblue;
+}
+.footer_bottom{
+  /* margin: 100px ; */
+  margin-top: 30px;
+  color: red;
+}
