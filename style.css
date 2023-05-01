@@ -20,6 +20,13 @@ html{
   --color-primary-red: rgb(193, 0, 0);
 }
 /*Color declaring ends here*/
+.nav_bar ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header{
+  /* margin-top:6px; */
+}
 
 /*Decorations*/
 Header,
@@ -82,11 +89,6 @@ header {
 #heading{
   padding-top: 30px;
   font-weight: 600;
-}
-
-.nav_bar ul li {
-  display: inline-block;
-  padding: 0 20px;
 }
 /*positions here*/
 
