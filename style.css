@@ -8,11 +8,13 @@
 }
 body{
   background-color: var(--color-primary-bg);
-
+}
+html{
+  scroll-behavior: smooth;
 }
 /*Color declaration starts here*/
 :root {
-  --color-primary-bg: #bfe1e6;
+  --color-primary-bg: #bde7ed;
   --color-primary-Black: #000000;
   --color-primary-Blue: #0679dd;
   --color-primary-red: rgb(193, 0, 0);
@@ -75,7 +77,11 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 10%;
+  /* padding: 10px 10%; */
+}
+#heading{
+  padding-top: 30px;
+  font-weight: 600;
 }
 
 .nav_bar ul li {
@@ -92,6 +98,10 @@ header {
 .rightpage:hover {
   cursor: pointer;
   touch-action: auto;
+}
+.ongoing_projects{
+  display: flex;
+  flex-direction: column;
 }
 
 button:hover {
@@ -138,6 +148,17 @@ button:hover {
 .nav_bar ul li a {
   transition: all 0.3 ease 0s;
 }
+
+.image{
+  max-height: 300px;
+  max-width: 600px;
+}
+.ads{
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  
+}
 @keyframes animate{
     from{
         color: var(--color-primary-bg);
@@ -162,19 +183,47 @@ button:hover {
   font-size: 19px;
   margin: 4vh 12vh;
 }
-
-
-.ongoing_projects{
+/* Carousel Part */
+/* .informationpart{
+  position: relative;
+  width: 100%;
+} */
+/* .carousel{
+  overflow: hidden;
+  top: 0;
+  width: 7200px;
+  position: absolute;
+  border: 1px solid black;
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
-}
+  position: relative;
+} */
+  /* aspect-ratio: 16/9; */
+  /* overflow-y: hidden; */
+/* .carousel{
+  width: 7200px;
+  position: absolute;
+} */
+
 .Footer{
-  height: 300px;
-  /* margin: 0vh 20vh; */
-  background-color: aliceblue;
-}
-.footer_bottom{
-  /* margin: 100px ; */
+  height:80px;
   margin-top: 30px;
-  color: red;
+  margin-left: 20vh;
+  margin-right: 20vh;
+
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bottom_nav ul li{
+  display: inline-block;
+}
+.bottom_nav ul{
+  /* padding: 12px 32px; */
+  margin: 32px;
+  display: flex;
+  justify-content: space-around;
 }

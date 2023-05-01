@@ -5,6 +5,8 @@
   font-family: "Poppins", sans-serif;
 }
 body {
+  /* background: rgb(36, 0, 0); */
+  /* background-color: var(--color-primary-bg); */
   background: rgb(36, 0, 0);
   background: linear-gradient(
     90deg,
@@ -13,6 +15,13 @@ body {
     rgba(9, 113, 119, 1) 100%,
     rgba(0, 253, 255, 1) 100%
   );
+}
+/*Color declaration starts here*/
+:root {
+  --color-primary-bg: #bde7ed;
+  --color-primary-Black: #000000;
+  --color-primary-Blue: #0679dd;
+  --color-primary-red: rgb(193, 0, 0);
 }
 .div {
   text-align: center;
