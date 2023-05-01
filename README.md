@@ -1,1 +1,1 @@
-page1.html is the main page of this website
+index.html is the main page of this website
